@@ -15,3 +15,5 @@ function gameLoop() {
 
 tileMap.setCanvasSize(canvas);
 setInterval(gameLoop, 1000 / 75);
+
+//1:11  Pacman
