@@ -223,7 +223,7 @@ export default class Pacman {
 
   #eatGhost(enemies) {
     if (this.powerDotActive) {
-      const collideEnemies = enemies.filter((enemy) => enemy.collideWhit(this));
+      const collideEnemies = enemies.filter((enemy) => enemy.collideWith(this));
       collideEnemies.forEach((enemy) => {
         enemies.splice(enemies.indexOf(enemy), 1);
         this.eatGhostSound.play();
